@@ -1,12 +1,12 @@
-*{
-    padding:0;
+* {
+    padding: 0;
     margin: 0;
     font-family: 'josefin sans', sans-serif;
     box-sizing: border-box;
     list-style: none;
 }
 
-header{
+header {
     height: 100vh;
     width: 100%;
     background: linear-gradient(to right, #536976, #292e49);
@@ -14,7 +14,7 @@ header{
     background-position: center; */
 }
 
-.header-box{
+.header-box {
     position: relative;
     display: flex;
     justify-content: center;
@@ -24,14 +24,16 @@ header{
     background-color: linear-gradient(to bottom, #536976, #292e49);
     overflow: hidden;
 }
-.header-box:before{
+
+.header-box:before {
     content: '';
     position: absolute;
     width: 100px;
     height: 300%;
-    background:linear-gradient(#00ccff, #d400d4);
+    background: linear-gradient(#00ccff, #d400d4);
     animation: animate1 5s linear infinite;
 }
+
 @keyframes animate1 {
     0% {
         transform: rotate(0deg);
@@ -41,7 +43,8 @@ header{
         transform: rotate(-360deg);
     }
 }
-.header-box:after{
+
+.header-box:after {
     content: '';
     position: absolute;
     inset: 8px;
@@ -132,30 +135,32 @@ header{
     background: #292e49;
     border-radius: 20px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:30px 8% 0;
+    padding: 30px 8% 0;
 }
 
-.logo{
+.logo {
     color: white;
     font-size: xx-large;
     letter-spacing: 1px;
     cursor: pointer;
 }
-span{
+
+span {
     color: rgba(255, 0, 0, 0.826);
 }
 
-nav ul li{
+nav ul li {
     color: white;
     display: inline-block;
     padding: 10px 25px;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -163,14 +168,21 @@ nav ul li a{
     transition: all .55s ease;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: rgba(255, 0, 0, 0.826);
     border-bottom: 2px solid white;
-    transition:all .55s ease;
+    transition: all .55s ease;
 }
 
-.btn{
-    border: 2px solid transparent ;
+#burger {
+    color: white;
+    font-size: 30px;
+    display: none;
+    transition: all .55s ease;
+}
+
+.btn {
+    border: 2px solid transparent;
     border-radius: 30px;
     background-color: rgba(255, 0, 0, 0.826);
     padding: 10px 25px;
@@ -178,18 +190,19 @@ nav ul li a:hover{
     color: white;
     font-weight: bold;
     font-size: larger;
-    
+
 }
 
-.btn:hover{
-    transform:translateX(-10px);
+.btn:hover {
+    transform: translateX(-10px);
     transition: all .55s ease;
 }
 
-.img img{
+.img img {
     width: 300px;
 }
-.introduction{
+
+.introduction {
     display: flex;
     justify-content: center;
     gap: 5%;
@@ -198,27 +211,32 @@ nav ul li a:hover{
     top: 20%;
     left: 8%;
 }
-h1{
+
+h1 {
     color: white;
     margin: 20px 0 20px;
     font-size: 70px;
 }
-h3{
+
+h3 {
     color: white;
     font-size: 25px;
     margin-bottom: 50px;
 }
-h4{
+
+h4 {
     color: rgba(220, 87, 87, 0.788);
     letter-spacing: 2px;
     font-size: 20px;
 }
-.newsletter form{
+
+.newsletter form {
     width: 350px;
     max-width: 100%;
     position: relative;
 }
-.newsletter form input:first-child{
+
+.newsletter form input:first-child {
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
@@ -226,7 +244,8 @@ h4{
     outline: none;
     border-radius: 30px;
 }
-.newsletter form input:last-child{
+
+.newsletter form input:last-child {
     position: absolute;
     display: inline-block;
     outline: none;
@@ -239,14 +258,16 @@ h4{
     right: 10px;
     color: white;
 }
-.newsletter form input:last-child:hover{
+
+.newsletter form input:last-child:hover {
     transform: translateX(5px);
 }
-#about{
-    /* background: #292e49; */
+
+#about {
     background: linear-gradient(to left, #536976, #292e49);
 }
-.about{
+
+.about {
     width: 100%;
     padding: 100px 0;
     display: flex;
@@ -254,35 +275,41 @@ h4{
     align-items: center;
     gap: 5%;
 }
-.about img{
+
+.about img {
     width: 450px;
     box-shadow: #000;
     background-blend-mode: darken;
 }
-.about-text{
+
+.about-text {
     width: 500px;
 }
-.about-text h2{
+
+.about-text h2 {
     color: white;
     font-size: 70px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.about-text h5{
+
+.about-text h5 {
     color: white;
     letter-spacing: 2px;
-    font-size: 20px ;
+    font-size: 20px;
     margin-bottom: 25px;
     text-transform: capitalize;
 }
-.about-text p{
-    color:rgba(220, 87, 87, 0.788) ;
+
+.about-text p {
+    color: rgba(220, 87, 87, 0.788);
     letter-spacing: 1px;
     line-height: 18px;
     font-size: 18px;
     margin-bottom: 45px;
 }
-button{
+
+button {
     border: 2px solid transparent;
     border-radius: 30px;
     background-color: rgba(255, 0, 0, 0.826);
@@ -293,31 +320,36 @@ button{
     font-size: larger;
     transition: all .50s ease;
 }
-button:hover{
+
+button:hover {
     background-color: transparent;
     border: 2px solid rgba(220, 87, 87, 0.788);
     cursor: pointer;
 }
-#services{
+
+#services {
     /* background: #536976; */
     background: linear-gradient(to right, #536976, #292e49);
     width: 100%;
     padding: 100px 0;
 }
-.services h2{
+
+.services h2 {
     color: white;
     font-size: 70px;
     width: 1130px;
     margin: 30px auto;
     text-align: center;
 }
-.box{
+
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 400px;
 }
-.card{
+
+.card {
     height: 430px;
     width: 330px;
     padding: 20px 35px;
@@ -328,25 +360,29 @@ button:hover{
     overflow: hidden;
     text-align: center;
 }
-.card i{
+
+.card i {
     font-size: 50px;
     display: block;
     text-align: center;
     margin: 25px 0px;
-    color:rgba(255, 0, 0, 0.826) ;
+    color: rgba(255, 0, 0, 0.826);
 }
-h5{
+
+h5 {
     color: white;
     font-size: 23px;
-    margin-bottom:15px ;
+    margin-bottom: 15px;
 }
-.para p{
-    color:white ;
+
+.para p {
+    color: white;
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
 }
-.card .button{
+
+.card .button {
     border: 2px solid transparent;
     border-radius: 30px;
     background-color: rgba(255, 0, 0, 0.826);
@@ -360,71 +396,82 @@ h5{
     left: 90px;
     transition: all .50s ease;
 }
+
 .card .button:hover {
     background-color: transparent;
     border: 2px solid rgba(220, 87, 87, 0.788);
     cursor: pointer;
 }
-.contact{
+
+.contact {
     width: 100%;
     height: 300px;
-    /* background: #292e49; */
     background: linear-gradient(to top, #536976, #292e49);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-.contact-dets{
+
+.contact-dets {
     align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
-.contact-dets .mail p{
+
+.contact-dets .mail p {
     width: 70%;
     letter-spacing: 1px;
 }
-.contact-dets .mobile{
+
+.contact-dets .mobile {
     margin-left: 10%;
     border-left: 2px solid white;
     padding-left: 10%;
     line-height: 2px;
     letter-spacing: 1px;
 }
-.contact-dets .mobile h3{
+
+.contact-dets .mobile h3 {
     padding: 0;
     margin-bottom: 35px;
 }
-.contact-dets .mobile p{
+
+.contact-dets .mobile p {
     width: max-content;
 }
-.needs{
+
+.needs {
     margin: 25px;
     font-size: 25px;
 }
-.contact p{
+
+.contact p {
     color: white;
     font-weight: bold;
     margin-bottom: 25px;
 }
-.contact .button-2{
+
+.contact .button-2 {
     border: 2px solid transparent;
-        border-radius: 30px;
-        background-color: rgba(255, 0, 0, 0.826);
-        padding: 10px 20px;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        font-size: larger;
-        transition: all .50s ease;
+    border-radius: 30px;
+    background-color: rgba(255, 0, 0, 0.826);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    transition: all .50s ease;
 }
+
 .contact .button-2:hover {
     background-color: transparent;
     border: 2px solid rgba(220, 87, 87, 0.788);
     cursor: pointer;
 }
-footer{
+
+footer {
     position: relative;
     width: 100%;
     height: 400px;
@@ -435,23 +482,27 @@ footer{
     align-items: center;
     flex-direction: column;
 }
-footer p:nth-child(1){
+
+footer p:nth-child(1) {
     font-size: 30px;
     color: white;
     margin-bottom: 20px;
     font-weight: bold;
 }
-footer p:nth-child(2){
+
+footer p:nth-child(2) {
     color: white;
     font-size: 18px;
     width: 500px;
     text-align: center;
     line-height: 26px;
 }
-.social{
+
+.social {
     display: flex;
 }
-.social a{
+
+.social a {
     width: 45px;
     height: 45px;
     display: flex;
@@ -464,13 +515,284 @@ footer p:nth-child(2){
     text-decoration: none;
     font-size: larger;
 }
-.social a:hover{
+
+.social a:hover {
     transform: translateY(-5px);
     transition: all .20s ease;
 }
-.end{
+
+.end {
     color: rgba(220, 87, 87, 0.788);
     position: absolute;
     font-size: 15px;
     bottom: 20px;
+}
+
+@media(max-width: 1020px) {
+ 
+    nav li a {
+        font-size: smaller;
+    }
+
+    .btn {
+        font-size: medium;
+        font: 300;
+        padding: 5px 15px;
+    }
+
+    h1 {
+        margin: 10px 0 10px;
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+
+    .newsletter form {
+        width: 300px;
+    }
+
+    .newsletter form input:first-child {
+        padding: 7px 90px 7px 8px;
+        border: 2px solid rgba(255, 0, 0, 0.826);
+        outline: none;
+        border-radius: 30px;
+    }
+
+    .newsletter form input:last-child {
+        padding: 7px 15px;
+        border-radius: 30px;
+        top: 2px;
+        right: 5px;
+    }
+
+    .header {
+        height: 75vh;
+    }
+
+    .header-box {
+        margin-left: 50px;
+        width: 100px;
+        height: 155px;
+    }
+
+    .header-box2 {
+        margin-left: 50px;
+        width: 150px;
+        height: 100px;
+        top: 100px;
+        right: -100px;
+    }
+
+    .header-box3 {
+        margin-left: 50px;
+        top: 0px;
+        right: -150px;
+        width: 100px;
+        height: 150px;
+    }
+
+    .about {
+        padding: 50px 0;
+    }
+
+    .about img {
+        width: 350px;
+    }
+
+    .about-text {
+        width: 300px;
+    }
+
+    .about-text h2 {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .about-text h5 {
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+
+    .about-text p {
+        letter-spacing: 1px;
+        line-height: 15px;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    button {
+        padding: 5px 15px;
+        font-weight: normal;
+        font-size: medium;
+    }
+
+    #services {
+
+        padding: 50px 0;
+    }
+
+    .services h2 {
+        font-size: 45px;
+        width: 565px;
+        margin: 15px auto;
+    }
+
+    .box {
+        min-height: 200px;
+    }
+
+    .card {
+        height: 350px;
+        width: 200px;
+        padding: 10px 15px;
+    }
+
+    .card i {
+        font-size: 15px;
+        margin: 20px 0px;
+    }
+
+    h5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .para p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+
+    .card .button {
+        padding: 5px 10px;
+        font-weight: normal;
+        font-size: medium;
+        position: absolute;
+        bottom: 10px;
+        left: 55px;
+    }
+
+    .contact {
+        height: 250px;
+    }
+
+    .contact-dets .mobile h3 {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .needs {
+        margin: 25px;
+        font-size: 20px;
+    }
+
+    .contact p {
+        color: white;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .contact .button-2 {
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: medium;
+    }
+
+    footer {
+        height: 300px;
+    }
+
+    footer p:nth-child(1) {
+        font-size: 20px;
+        color: white;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    footer p:nth-child(2) {
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .social a {
+        width: 25px;
+        height: 25px;
+        margin: 12px 5px;
+        font-size: larger;
+    }
+}
+@media(max-width: 920px){
+    #nav-list {
+            display: none;
+        }
+    #burger{
+        display: block;
+    }
+    .btn{
+        display: none;
+    }
+    .open{
+        display: none;
+    }
+    .header-box{
+        margin-left: 25px;
+    }
+    .header-box2{
+        margin-left: 0;
+        right: -85px;
+    }
+    .header-box3{
+        margin-left: 25px;
+        right: -125px;
+        top: -25px;
+    }
+    .about{
+        padding: 0;
+    }
+           .about img {
+               width: 250px;
+           }
+    
+           .about-text {
+               width: 250px;
+           }
+    .box{
+        flex-direction: column;
+    }
+    .card{
+        margin: 25px 0;
+        height: 250px;
+        width: 350px;
+    }
+    .card i{
+        font-size: 20px;
+    }
+    .card .button{
+        width: 75%;
+        left: 45.569px;
+    }
+}
+@media(max-width:750px){
+    .header-box{
+        margin-left: 0px;
+        height: 200px;
+        width: 120px;
+    }
+    .header-box2{
+        display: none;
+    }
+    .header-box3{
+        display: none;
+    }
 }
