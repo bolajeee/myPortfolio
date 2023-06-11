@@ -309,7 +309,14 @@ h4 {
     margin-bottom: 45px;
 }
 
-button {
+.readMore {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    margin: 50px auto 0;
+}
+
+.button {
     border: 2px solid transparent;
     border-radius: 30px;
     background-color: rgba(255, 0, 0, 0.826);
@@ -321,7 +328,7 @@ button {
     transition: all .50s ease;
 }
 
-button:hover {
+.button:hover {
     background-color: transparent;
     border: 2px solid rgba(220, 87, 87, 0.788);
     cursor: pointer;
@@ -420,9 +427,15 @@ h5 {
     flex-direction: row;
 }
 
+.contact-dets .mail h3 {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
 .contact-dets .mail p {
     width: 70%;
     letter-spacing: 1px;
+    line-height: 5px;
 }
 
 .contact-dets .mobile {
@@ -529,7 +542,9 @@ footer p:nth-child(2) {
 }
 
 @media(max-width: 1020px) {
- 
+    .introduction{
+        margin: 50px 0;
+    }
     nav li a {
         font-size: smaller;
     }
@@ -630,7 +645,12 @@ footer p:nth-child(2) {
         margin-bottom: 25px;
     }
 
-    button {
+    .readMore {
+        width: 20%;
+        margin: 30px auto 0;
+    }
+
+    .button {
         padding: 5px 15px;
         font-weight: normal;
         font-size: medium;
@@ -671,15 +691,6 @@ footer p:nth-child(2) {
         font-size: 15px;
         line-height: 20px;
         margin-bottom: 15px;
-    }
-
-    .card .button {
-        padding: 5px 10px;
-        font-weight: normal;
-        font-size: medium;
-        position: absolute;
-        bottom: 10px;
-        left: 55px;
     }
 
     .contact {
@@ -731,68 +742,246 @@ footer p:nth-child(2) {
         margin: 12px 5px;
         font-size: larger;
     }
+                .profile img {
+                    width: 25%;
+                    left: 35%;
+                }
+        
+                .profile-text h2 {
+                    font-size: 35px;
+                }
+        
+                .experience h2 {
+                    font-size: 45px;
+                    padding: 100px 0 0;
+                }
+        
+                .experience img {
+                    display: none;
+                }
+        
+                .experience-text {
+                    align-items: center;
+                    width: 80%;
+                    align-content: center;
+                    text-align: center;
+                }
+        
+                .experience-text h3 {
+                    font-size: 35px;
+                }
+        
+                .certificates h2 {
+                    font-size: 45px;
+                }
+        
+                .certificates i {
+                    font-size: 20px;
+                }
+        
+                .certificates a {
+                    font-size: 20px;
+                }
 }
-@media(max-width: 920px){
+
+@media(max-width: 920px) {
+    .introduction{
+        margin: 70px 0;
+    }
     #nav-list {
-            display: none;
-        }
-    #burger{
+        display: none;
+    }
+
+    #burger {
         display: block;
     }
-    .btn{
+
+    .btn {
         display: none;
     }
-    .open{
+
+    .open {
         display: none;
     }
-    .header-box{
+
+    .header-box {
         margin-left: 25px;
     }
-    .header-box2{
+
+    .header-box2 {
         margin-left: 0;
         right: -85px;
     }
-    .header-box3{
+
+    .header-box3 {
         margin-left: 25px;
         right: -125px;
         top: -25px;
     }
-    .about{
+
+    .about {
         padding: 0;
     }
-           .about img {
-               width: 250px;
-           }
-    
-           .about-text {
-               width: 250px;
-           }
-    .box{
+
+    .about img {
+        width: 250px;
+    }
+
+    .about-text {
+        width: 250px;
+    }
+
+    .box {
         flex-direction: column;
     }
-    .card{
+
+    .card {
         margin: 25px 0;
         height: 250px;
         width: 350px;
     }
-    .card i{
+
+    .card i {
         font-size: 20px;
     }
-    .card .button{
-        width: 75%;
-        left: 45.569px;
-    }
 }
-@media(max-width:750px){
-    .header-box{
+
+@media(max-width:750px) {
+    .header-box {
         margin-left: 0px;
         height: 200px;
         width: 120px;
     }
-    .header-box2{
+
+    .header-box2 {
         display: none;
     }
-    .header-box3{
+
+    .header-box3 {
         display: none;
     }
+}
+
+/*read more page*/
+
+.introduction p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 500px;
+}
+
+.profile {
+    background: linear-gradient(to left, #536976, #292e49);
+    display: block;
+}
+
+.profile img {
+    width: 35%;
+    position: relative;
+    left: 30%;
+    height: auto;
+    margin: 0;
+}
+
+.profile-text {
+    width: 70%;
+    left: 15%;
+    position: relative;
+}
+
+.profile-text h2 {
+    color: white;
+    font-size: 45px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-text p {
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 30px;
+}
+
+.experience {
+    background: linear-gradient(to top, #536976, #292e49);
+}
+
+.experience h2 {
+    color: white;
+    font-size: 70px;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.experience-row {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    width: 80%;
+    margin-left: 10%;
+    padding: 50px 0;
+}
+
+.experience img {
+    width: 450px;
+    height: auto;
+}
+
+.experience-text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: left;
+    width: 60%;
+}
+
+.experience-text h3 {
+    font-size: 45px;
+    padding-top: 30px;
+}
+
+.experience-text p {
+    color: white;
+    font-size: 20px;
+    padding: 15px 0 30px;
+
+}
+
+#certification {
+    background: linear-gradient(to top, #536976, #292e49);
+}
+
+.certificates div {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.certificates a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    color: rgba(220, 87, 87, 0.788);
+}
+
+.certificates i {
+    font-size: 30px;
+    color: white;
+}
+
+.certificates h2 {
+    color: white;
+    font-size: 70px;
+    padding: 100px 0 50px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
 }
