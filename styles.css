@@ -153,8 +153,12 @@ nav {
             right: 8%;
             top: 35px;
             align-items: center;
+            transition: all .55s ease;
   }
 
+#nav-list2{
+    transition: all 3s ease-out;
+}
 .nav-list2{
     display: none;
 }
@@ -194,6 +198,7 @@ nav ul li a:hover {
     z-index: 10;
     cursor: pointer;
     display: none;
+    transition: all .75s ease;
 }
 
 .bar{
@@ -491,6 +496,8 @@ h5 {
 }
 
 .contact .button-2 {
+    display: flex;
+    justify-content: center;
     border: 2px solid transparent;
     border-radius: 30px;
     background-color: rgba(255, 0, 0, 0.826);
@@ -499,7 +506,7 @@ h5 {
     color: white;
     font-weight: bold;
     font-size: larger;
-    transition: all .50s ease;
+    transition: all .55s ease;
 }
 
 .contact .button-2:hover {
@@ -894,7 +901,18 @@ footer p:nth-child(2) {
 }
 
 /*read more page*/
-
+.page-name{
+    font-size: 25px;
+    font-weight: bold;
+    }
+    .page-name a{
+        color: white;
+            text-decoration: none;
+            list-style: none;
+    }
+    .det{
+        border-bottom: 2px solid white;
+    }
 .introduction p {
     font-size: 20px;
     margin-bottom: 30px;
@@ -982,7 +1000,7 @@ footer p:nth-child(2) {
     color: white;
     font-size: 20px;
     padding: 15px 0 30px;
-
+    line-height: 23px;
 }
 
 #certification {
