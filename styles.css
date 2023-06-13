@@ -1204,7 +1204,9 @@ footer p:nth-child(2) {
     #R-img {
         display: none;
     }
-
+    .profile{
+        padding: 50px 0;
+    }
     .profile-text h2 {
         font-size: 35px;
     }
