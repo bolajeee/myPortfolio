@@ -143,23 +143,25 @@ nav {
     padding: 30px 8% 0;
 }
 
-  .open {
-            background-color: #292e49;
-            display: inline-flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 15px;
-            position: absolute;
-            right: 8%;
-            top: 35px;
-            align-items: center;
-            transition: all .55s ease;
-  }
+.open {
+    background-color: #292e49;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    position: absolute;
+    right: 8%;
+    top: 35px;
+    align-items: center;
+    transition: all .55s ease;
+    z-index: 1001;
+}
 
-#nav-list2{
+#nav-list2 {
     transition: all 3s ease-out;
 }
-.nav-list2{
+
+.nav-list2 {
     display: none;
 }
 
@@ -201,13 +203,14 @@ nav ul li a:hover {
     transition: all .75s ease;
 }
 
-.bar{
+.bar {
     background-color: white;
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px 0;
     transition: all .3s ease;
+    z-index: 10002;
 }
 
 .btn {
@@ -331,7 +334,7 @@ h4 {
 }
 
 .about-text p {
-    color: rgba(220, 87, 87, 0.788);
+    color: white;
     letter-spacing: 1px;
     line-height: 18px;
     font-size: 18px;
@@ -573,9 +576,10 @@ footer p:nth-child(2) {
 }
 
 @media(max-width: 1020px) {
-    .introduction{
+    .introduction {
         margin-top: 100px;
     }
+
     nav li a {
         font-size: smaller;
     }
@@ -644,10 +648,12 @@ footer p:nth-child(2) {
         width: 100px;
         height: 150px;
     }
-    #about{
+
+    #about {
         height: 70vh;
         padding: 100px;
     }
+
     .about {
         padding: 50px 0;
     }
@@ -691,7 +697,6 @@ footer p:nth-child(2) {
     }
 
     #services {
-
         padding: 50px 0;
     }
 
@@ -776,65 +781,73 @@ footer p:nth-child(2) {
         margin: 12px 5px;
         font-size: larger;
     }
-                .profile img {
-                    width: 25%;
-                    left: 35%;
-                }
-        
-                .profile-text h2 {
-                    font-size: 35px;
-                }
-        
-                .experience h2 {
-                    font-size: 45px;
-                    padding: 100px 0 0;
-                }
-        
-                .experience img {
-                    display: none;
-                }
-        
-                .experience-text {
-                    align-items: center;
-                    width: 80%;
-                    align-content: center;
-                    text-align: center;
-                }
-        
-                .experience-text h3 {
-                    font-size: 35px;
-                }
-        
-                .certificates h2 {
-                    font-size: 45px;
-                }
-        
-                .certificates i {
-                    font-size: 20px;
-                }
-        
-                .certificates a {
-                    font-size: 20px;
-                }
+
+    .profile img {
+        width: 25%;
+        left: 35%;
+    }
+
+    .profile-text h2 {
+        font-size: 35px;
+    }
+
+    .experience h2 {
+        font-size: 45px;
+        padding: 100px 0 0;
+    }
+
+    .experience img {
+        display: none;
+    }
+
+    .experience-text {
+        align-items: center;
+        width: 80%;
+        align-content: center;
+        text-align: center;
+    }
+
+    .experience-text h3 {
+        font-size: 35px;
+    }
+
+    .certificates h2 {
+        font-size: 45px;
+    }
+
+    .certificates i {
+        font-size: 20px;
+    }
+
+    .certificates a {
+        font-size: 20px;
+    }
 }
 
 @media(max-width: 920px) {
     #burger {
-            display: block;
-        }
-    #burger.active .bar:nth-child(2){
+        display: block;
+        z-index: 10002;
+    }
+
+    #burger.active .bar:nth-child(2) {
         opacity: 0;
     }
-          #burger.active .bar:nth-child(1) {
-              transform: translateY(8px) rotate(45deg);
-          }
-                        #burger.active .bar:nth-child(3) {
-            transform: translateY(-8px) rotate(-45deg);
-                        }
 
-    .introduction{
+    #burger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+
+    }
+
+    #burger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
+
+    .introduction {
         margin-top: 120px;
     }
+
     #nav-list {
         display: none;
     }
@@ -843,7 +856,7 @@ footer p:nth-child(2) {
         display: none;
     }
 
-  
+
 
     .header-box {
         margin-left: 25px;
@@ -904,19 +917,22 @@ footer p:nth-child(2) {
 }
 
 /*read more page*/
-.page-name{
+.page-name {
     font-size: 25px;
     font-weight: bold;
-    }
-    .page-name a{
-        color: white;
-            text-decoration: none;
-            list-style: none;
-    }
-    .det{
-        border-bottom: 2px solid white;
-    }
-.introduction p {
+}
+
+.page-name a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.det {
+    border-bottom: 2px solid white;
+}
+
+.R-introduction p {
     font-size: 20px;
     margin-bottom: 30px;
     width: 500px;
@@ -1036,4 +1052,200 @@ footer p:nth-child(2) {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
+}
+
+@media(min-width:300px) {
+    #img {
+        display: none;
+    }
+
+    .introduction {
+        margin: 0px;
+    }
+
+    .introduction h1 {
+        font-size: 30px;
+    }
+
+    .introduction h3 {
+        font-size: medium;
+        width: 80%;
+    }
+
+    .bar {
+        width: 20px;
+        height: 2px;
+        margin: 3px;
+    }
+
+    #burger.active .bar:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    #burger.active .bar:nth-child(3) {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+
+    .newsletter {
+        width: 70%;
+    }
+
+    #about {
+        padding: 50px;
+        height: 100%;
+    }
+
+    .about {
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about img {
+        width: 150px;
+    }
+
+    .about-text h2 {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .about-text h5 {
+        font-size: 20px;
+        margin-bottom: 5px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about-text p {
+        letter-spacing: 1px;
+        line-height: 20px;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    #services {
+        text-align: center;
+    }
+
+    .services h2 {
+        font-size: 25px;
+        padding: 0%;
+        width: fit-content;
+    }
+
+    .card {
+        width: 80%;
+        margin: 5% 10%;
+    }
+
+    .readMore {
+        width: fit-content;
+    }
+
+    .contact {
+        height: fit-content;
+    }
+
+    .contact-dets {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact .mail {
+        padding: 50px 0 20px;
+    }
+
+    .contact-dets .mobile {
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .contact-dets .mobile h3 {
+        padding: 15px 0;
+    }
+
+    .contact .button-2 {
+        margin: 5px 0 15px;
+    }
+
+    .needs {
+        margin: 25px 0 5px;
+    }
+
+    .end {
+        font-size: 10px;
+    }
+
+    /*read more aspect*/
+    .logo {
+        font-size: 25px;
+    }
+
+    .page-name {
+        font-size: 15px;
+    }
+
+    .R-introduction {
+        padding: 50px 8%;
+    }
+
+    .R-introduction h1 {
+        font-size: 35px;
+    }
+
+    .R-introduction h3 {
+        font-size: medium;
+        margin: 15px 0;
+    }
+
+    #R-img {
+        display: none;
+    }
+
+    .profile-text h2 {
+        font-size: 35px;
+    }
+
+    .profile-text p {
+        font-size: 15px;
+    }
+
+    .experience h2 {
+        font-size: 35px;
+        padding: 50px 0;
+    }
+
+    .experience-text h3 {
+        font-size: 35px;
+    }
+
+    .experience-text h5 {
+        font-size: 17px;
+        width: 300px;
+    }
+
+    .experience-row {
+        width: 90%;
+        padding: 25px;
+        margin-left: 5%;
+    }
+
+    .experience-row p {
+        font-size: 15px;
+    }
+
+    .certificates h2 {
+        font-size: 35px;
+    }
+
+    .certificates a {
+        font-size: 15px;
+    }
+
+    .certificates i {
+        font-size: 15px;
+    }
 }
