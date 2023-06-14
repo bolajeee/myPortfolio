@@ -904,6 +904,9 @@ footer p:nth-child(2) {
 }
 
 @media(max-width:750px) {
+    .header{
+        height: 100vh;
+    }
     .header-box {
         margin-left: 0px;
         height: 200px;
@@ -1057,13 +1060,14 @@ footer p:nth-child(2) {
     text-transform: uppercase;
 }
 
-@media(max-width:350px) {
+@media(max-width:650px) {
     #img {
         display: none;
     }
 
     .introduction {
         margin: 0px;
+       padding-top:100px;
     }
 
     .introduction h1 {
@@ -1095,13 +1099,15 @@ footer p:nth-child(2) {
 
     #about {
         padding: 50px;
-        height: 100%;
+        height: auto;
+
     }
 
     .about {
-        display: inline-block;
-        justify-content: center;
-        text-align: center;
+            display: flex;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
     }
 
     .about img {
@@ -1192,7 +1198,7 @@ footer p:nth-child(2) {
     }
 
     .R-introduction {
-        padding: 50px 8%;
+        padding: 30vh 8%;
     }
 
     .R-introduction h1 {

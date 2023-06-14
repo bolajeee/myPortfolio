@@ -53,11 +53,6 @@ sr2.reveal(".social a:nth-child(3)", { delay: 600, origin: "bottom" });
 sr2.reveal(".social a:nth-child(4)", { delay: 700, origin: "bottom" });
 
 
-sr3.reveal(".profile", { delay: 700, origin: "bottom" });
-sr3.reveal(".experience img", { delay: 300, origin: "left" });
-sr3.reveal(".experience-text", { delay: 300, origin: "right" });
-sr.reveal(".certification", { delay: 500, origin: "bottom" });
-
 
 
 
