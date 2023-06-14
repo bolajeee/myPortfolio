@@ -653,7 +653,7 @@ footer p:nth-child(2) {
     }
 
     #about {
-        height: 70vh;
+        height: auto;
         padding: 100px;
     }
 
