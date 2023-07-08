@@ -1,10 +1,25 @@
 * {
-    padding: 0;
+    ader-box padding: 0;
     margin: 0;
     font-family: 'josefin sans', sans-serif;
     box-sizing: border-box;
     list-style: none;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #292e49;
+}
+
+
+/* header aspect */
 
 header {
     height: 100vh;
@@ -57,8 +72,8 @@ header {
     display: flex;
     justify-content: center;
     border-radius: 30px;
-    top: 150px;
-    right: -150px;
+    top: 250px;
+    right: -50px;
     width: 250px;
     height: 200px;
     background-color: linear-gradient(to bottom, #536976, #292e49);
@@ -99,7 +114,7 @@ header {
     display: flex;
     justify-content: center;
     border-radius: 30px;
-    top: 0px;
+    top: 50px;
     right: -250px;
     width: 200px;
     height: 250px;
@@ -240,8 +255,11 @@ nav ul li a:hover {
     gap: 5%;
     align-items: center;
     position: absolute;
-    top: 20%;
-    left: 8%;
+    padding: 10vh 8% 0;
+}
+
+.intro-text {
+    margin-right: 0px;
 }
 
 h1 {
@@ -262,7 +280,7 @@ h4 {
     font-size: 20px;
 }
 
-.newsletter form {
+/* .newsletter form {
     width: 350px;
     max-width: 100%;
     position: relative;
@@ -293,8 +311,10 @@ h4 {
 
 .newsletter form input:last-child:hover {
     transform: translateX(5px);
-}
+} */
 
+
+/* about aspect  */
 #about {
     background: linear-gradient(to left, #536976, #292e49);
 }
@@ -366,6 +386,8 @@ h4 {
     border: 2px solid rgba(220, 87, 87, 0.788);
     cursor: pointer;
 }
+
+/* services aspect  */
 
 #services {
     /* background: #536976; */
@@ -443,14 +465,17 @@ h5 {
     cursor: pointer;
 }
 
+/* contact aspect */
+
 .contact {
     width: 100%;
-    height: 300px;
+    height: auto;
     background: linear-gradient(to top, #536976, #292e49);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding: 100px 0;
 }
 
 .contact-dets {
@@ -519,6 +544,8 @@ h5 {
     cursor: pointer;
 }
 
+/* footer aspect  */
+
 footer {
     position: relative;
     width: 100%;
@@ -576,351 +603,10 @@ footer p:nth-child(2) {
     bottom: 20px;
 }
 
-.R-introduction{
-    padding: 150px 8%;
+.R-introduction {
+    padding: 30vh 8%;
 }
 
-@media(max-width: 1020px) {
-    .introduction {
-        margin-top: 100px;
-    }
-
-    nav li a {
-        font-size: smaller;
-    }
-
-    .btn {
-        font-size: medium;
-        font: 300;
-        padding: 5px 15px;
-    }
-
-    h1 {
-        margin: 10px 0 10px;
-        font-size: 45px;
-    }
-
-    h3 {
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-
-    h4 {
-        letter-spacing: 1px;
-        font-size: 15px;
-    }
-
-    .newsletter form {
-        width: 300px;
-    }
-
-    .newsletter form input:first-child {
-        padding: 7px 90px 7px 8px;
-        border: 2px solid rgba(255, 0, 0, 0.826);
-        outline: none;
-        border-radius: 30px;
-    }
-
-    .newsletter form input:last-child {
-        padding: 7px 15px;
-        border-radius: 30px;
-        top: 2px;
-        right: 5px;
-    }
-
-
-
-    .header-box {
-        margin-left: 50px;
-        width: 100px;
-        height: 155px;
-    }
-
-    .header-box2 {
-        margin-left: 50px;
-        width: 150px;
-        height: 100px;
-        top: 100px;
-        right: -100px;
-    }
-
-    .header-box3 {
-        margin-left: 50px;
-        top: 0px;
-        right: -150px;
-        width: 100px;
-        height: 150px;
-    }
-
-    #about {
-        height: auto;
-        padding: 100px;
-    }
-
-    .about {
-        padding: 50px 0;
-    }
-
-    .about img {
-        width: 350px;
-    }
-
-    .about-text {
-        width: 300px;
-    }
-
-    .about-text h2 {
-        font-size: 45px;
-        margin-bottom: 10px;
-    }
-
-    .about-text h5 {
-        letter-spacing: 1px;
-        font-size: 20px;
-        margin-bottom: 15px;
-        text-transform: capitalize;
-    }
-
-    .about-text p {
-        letter-spacing: 1px;
-        line-height: 15px;
-        font-size: 15px;
-        margin-bottom: 25px;
-    }
-
-    .readMore {
-        width: 20%;
-        margin: 30px auto 0;
-    }
-
-    .button {
-        padding: 5px 15px;
-        font-weight: normal;
-        font-size: medium;
-    }
-
-    #services {
-        padding: 50px 0;
-    }
-
-    .services h2 {
-        font-size: 45px;
-        width: 565px;
-        margin: 15px auto;
-    }
-
-    .box {
-        min-height: 200px;
-    }
-
-    .card {
-        height: 350px;
-        width: 200px;
-        padding: 10px 15px;
-    }
-
-    .card i {
-        font-size: 15px;
-        margin: 20px 0px;
-    }
-
-    h5 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .para p {
-        font-size: 15px;
-        line-height: 20px;
-        margin-bottom: 15px;
-    }
-
-    .contact {
-        height: 250px;
-    }
-
-    .contact-dets .mobile h3 {
-        padding: 0;
-        margin-bottom: 20px;
-    }
-
-    .needs {
-        margin: 25px;
-        font-size: 20px;
-    }
-
-    .contact p {
-        color: white;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    .contact .button-2 {
-        padding: 5px 10px;
-        text-decoration: none;
-        font-weight: normal;
-        font-size: medium;
-    }
-
-    footer {
-        height: 300px;
-    }
-
-    footer p:nth-child(1) {
-        font-size: 20px;
-        color: white;
-        margin-bottom: 10px;
-        font-weight: bold;
-    }
-
-    footer p:nth-child(2) {
-        font-size: 15px;
-        width: 300px;
-    }
-
-    .social a {
-        width: 25px;
-        height: 25px;
-        margin: 12px 5px;
-        font-size: larger;
-    }
-
-    .profile img {
-        width: 25%;
-        left: 35%;
-    }
-
-    .profile-text h2 {
-        font-size: 35px;
-    }
-
-    .experience h2 {
-        font-size: 45px;
-        padding: 100px 0 0;
-    }
-
-    .experience img {
-        display: none;
-    }
-
-    .experience-text {
-        align-items: center;
-        width: 80%;
-        align-content: center;
-        text-align: center;
-    }
-
-    .experience-text h3 {
-        font-size: 35px;
-    }
-
-    .certificates h2 {
-        font-size: 45px;
-    }
-
-    .certificates i {
-        font-size: 20px;
-    }
-
-    .certificates a {
-        font-size: 20px;
-    }
-}
-
-@media(max-width: 920px) {
-    #burger {
-        display: block;
-        z-index: 10002;
-    }
-
-    #burger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    #burger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-
-    }
-
-    #burger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-
-    }
-
-    .introduction {
-        margin-top: 120px;
-    }
-
-    #nav-list {
-        display: none;
-    }
-
-    .btn {
-        display: none;
-    }
-
-
-
-    .header-box {
-        margin-left: 25px;
-    }
-
-    .header-box2 {
-        margin-left: 0;
-        right: -85px;
-    }
-
-    .header-box3 {
-        margin-left: 25px;
-        right: -125px;
-        top: -25px;
-    }
-
-    .about {
-        padding: 0;
-    }
-
-    .about img {
-        width: 250px;
-    }
-
-    .about-text {
-        width: 250px;
-    }
-
-    .box {
-        flex-direction: column;
-    }
-
-    .card {
-        margin: 25px 0;
-        height: 250px;
-        width: 350px;
-    }
-
-    .card i {
-        font-size: 20px;
-    }
-}
-
-@media(max-width:750px) {
-    .header{
-        height: 100vh;
-    }
-    .header-box {
-        margin-left: 0px;
-        height: 200px;
-        width: 120px;
-    }
-
-    .header-box2 {
-        display: none;
-    }
-
-    .header-box3 {
-        display: none;
-    }
-}
 
 /*read more page*/
 .page-name {
@@ -1060,14 +746,382 @@ footer p:nth-child(2) {
     text-transform: uppercase;
 }
 
+@media(max-width: 1020px) {
+    /* header aspect  */
+
+    .introduction {
+        margin-top: 30vh;
+    }
+
+    .intro-text {
+        margin-right: 0;
+    }
+
+    nav li a {
+        font-size: smaller;
+    }
+
+    .btn {
+        font-size: medium;
+        font: 300;
+        padding: 5px 15px;
+    }
+
+    h1 {
+        margin: 10px 0 10px;
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+
+    /* .newsletter form {
+        width: 300px;
+    }
+
+    .newsletter form input:first-child {
+        padding: 7px 90px 7px 8px;
+        border: 2px solid rgba(255, 0, 0, 0.826);
+        outline: none;
+        border-radius: 30px;
+    }
+
+    .newsletter form input:last-child {
+        padding: 7px 15px;
+        border-radius: 30px;
+        top: 2px;
+        right: 5px;
+    } */
+
+    .header-box {
+        margin: 0px;
+        width: 200px;
+        height: 155px;
+    }
+
+    .header-box2 {
+        display: none;
+        margin-left: 50px;
+        width: 150px;
+        height: 100px;
+        top: 100px;
+        right: -100px;
+    }
+
+    .header-box3 {
+        display: none;
+        margin-left: 50px;
+        top: 0px;
+        right: -150px;
+        width: 100px;
+        height: 150px;
+    }
+
+    /* about aspect  */
+
+    #about {
+        height: auto;
+        padding: 100px;
+    }
+
+    .about {
+        padding: 50px 0;
+    }
+
+    .about img {
+        width: 350px;
+    }
+
+    .about-text {
+        width: 300px;
+    }
+
+    .about-text h2 {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .about-text h5 {
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+
+    .about-text p {
+        letter-spacing: 1px;
+        line-height: 15px;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    /* readmore aspect  */
+
+    .readMore {
+        width: 20%;
+        margin: 30px auto 0;
+    }
+
+    .button {
+        padding: 5px 15px;
+        font-weight: normal;
+        font-size: medium;
+    }
+
+    #services {
+        padding: 50px 0;
+    }
+
+    .services h2 {
+        font-size: 45px;
+        width: 565px;
+        margin: 15px auto;
+    }
+
+    .box {
+        min-height: 200px;
+    }
+
+    .card {
+        height: 350px;
+        width: 200px;
+        padding: 10px 15px;
+    }
+
+    .card i {
+        font-size: 15px;
+        margin: 20px 0px;
+    }
+
+    h5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .para p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+
+    /* contact aspect */
+
+    .contact {
+        height: auto;
+
+    }
+
+    .contact-dets .mobile h3 {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .needs {
+        margin: 25px;
+        font-size: 20px;
+    }
+
+    .contact p {
+        color: white;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .contact .button-2 {
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: medium;
+    }
+
+    /* footer aspect  */
+
+    footer {
+        height: 300px;
+    }
+
+    footer p:nth-child(1) {
+        font-size: 20px;
+        color: white;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    footer p:nth-child(2) {
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .social a {
+        width: 25px;
+        height: 25px;
+        margin: 12px 5px;
+        font-size: larger;
+    }
+
+    /* read more page  */
+
+    .profile img {
+        width: 25%;
+        left: 35%;
+    }
+
+    .profile-text h2 {
+        font-size: 35px;
+    }
+
+    /* experience aspect  */
+
+    .experience h2 {
+        font-size: 45px;
+        padding: 100px 0 0;
+    }
+
+    .experience img {
+        display: none;
+    }
+
+    .experience-text {
+        align-items: center;
+        width: 80%;
+        align-content: center;
+        text-align: center;
+    }
+
+    .experience-text h3 {
+        font-size: 35px;
+    }
+
+    /* certificates aspect  */
+
+    .certificates h2 {
+        font-size: 45px;
+    }
+
+    .certificates i {
+        font-size: 20px;
+    }
+
+    .certificates a {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 920px) {
+    /* header aspect */
+
+    #burger {
+        display: block;
+        z-index: 10002;
+    }
+
+    #burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #burger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+
+    }
+
+    #burger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
+
+    .introduction {
+        margin-top: 30vh;
+    }
+
+    #nav-list {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+
+    .header-box2 {
+        margin-left: 0;
+        right: -85px;
+    }
+
+    .header-box3 {
+        margin-left: 25px;
+        right: -125px;
+        top: -25px;
+    }
+
+    /* about aspect */
+
+    .about {
+        padding: 0;
+    }
+
+    .about img {
+        width: 250px;
+    }
+
+    .about-text {
+        width: 250px;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 25px 0;
+        height: 250px;
+        width: 350px;
+    }
+
+    .card i {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:750px) {
+
+    /* header aspect  */
+    .header {
+        height: 100vh;
+    }
+
+    .header-box {
+        margin-left: 0px;
+        height: 200px;
+        width: 120px;
+    }
+
+    .header-box2 {
+        display: none;
+    }
+
+    .header-box3 {
+        display: none;
+    }
+}
+
 @media(max-width:650px) {
+
+    /* header aspect  */
+
     #img {
         display: none;
     }
 
     .introduction {
         margin: 0px;
-       padding-top:100px;
+        padding-top: 30vh;
     }
 
     .introduction h1 {
@@ -1093,9 +1147,11 @@ footer p:nth-child(2) {
         transform: translateY(-5px) rotate(-45deg);
     }
 
-    .newsletter {
+    /* .newsletter {
         width: 70%;
-    }
+    } */
+
+    /* about aspect  */
 
     #about {
         padding: 50px;
@@ -1104,10 +1160,10 @@ footer p:nth-child(2) {
     }
 
     .about {
-            display: flex;
-                justify-content: center;
-                text-align: center;
-                flex-direction: column;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
     }
 
     .about img {
@@ -1133,6 +1189,8 @@ footer p:nth-child(2) {
         margin-bottom: 25px;
     }
 
+    /* services aspect  */
+
     #services {
         text-align: center;
     }
@@ -1152,9 +1210,8 @@ footer p:nth-child(2) {
         width: fit-content;
     }
 
-    .contact {
-        height: fit-content;
-    }
+    /* contact aspect  */
+
 
     .contact-dets {
         display: inline-flex;
@@ -1189,6 +1246,7 @@ footer p:nth-child(2) {
     }
 
     /*read more aspect*/
+
     .logo {
         font-size: 25px;
     }
@@ -1213,9 +1271,11 @@ footer p:nth-child(2) {
     #R-img {
         display: none;
     }
-    .profile{
+
+    .profile {
         padding: 50px 0;
     }
+
     .profile-text h2 {
         font-size: 35px;
     }
@@ -1223,6 +1283,8 @@ footer p:nth-child(2) {
     .profile-text p {
         font-size: 15px;
     }
+
+    /* experience aspect  */
 
     .experience h2 {
         font-size: 35px;
@@ -1247,6 +1309,9 @@ footer p:nth-child(2) {
     .experience-row p {
         font-size: 15px;
     }
+
+
+    /* certificate aspect  */
 
     .certificates h2 {
         font-size: 35px;
