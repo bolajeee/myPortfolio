@@ -115,7 +115,7 @@ header {
     justify-content: center;
     border-radius: 30px;
     top: 50px;
-    right: -250px;
+    right: -300px;
     width: 200px;
     height: 250px;
     background-color: linear-gradient(to bottom, #536976, #292e49);
@@ -604,6 +604,7 @@ footer p:nth-child(2) {
 }
 
 .R-introduction {
+    color: white;
     padding: 30vh 8%;
 }
 
@@ -626,13 +627,13 @@ footer p:nth-child(2) {
 
 .R-introduction p {
     font-size: 20px;
-    margin-bottom: 30px;
     width: 500px;
 }
 
 .profile {
     background: linear-gradient(to left, #536976, #292e49);
     display: block;
+    padding: 50px 0;
 }
 
 .profile img {
@@ -665,8 +666,10 @@ footer p:nth-child(2) {
     justify-content: center;
     align-items: center;
     justify-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
+
+/* experience aspect  */
 
 .experience {
     background: linear-gradient(to top, #536976, #292e49);
@@ -714,8 +717,11 @@ footer p:nth-child(2) {
     line-height: 23px;
 }
 
+/* certificate aspect  */
+
 #certification {
     background: linear-gradient(to top, #536976, #292e49);
+    padding: 50px 0;
 }
 
 .certificates div {
@@ -744,6 +750,38 @@ footer p:nth-child(2) {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
+}
+
+/* projects aspect */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(#292e49 0%, #536976 100%);
+    padding: 50px 0;
+}
+
+.projects h2 {
+    color: white;
+    font-size: 70px;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.project-row h3 {
+    color: crimson !important;
+}
+
+.project-text {
+    color: white;
+    margin: 50px 15% 30px;
+    width: 70%;
+    align-content: center;
+    text-align: center;
 }
 
 @media(max-width: 1020px) {
